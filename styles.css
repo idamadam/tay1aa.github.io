@@ -1,0 +1,77 @@
+/* Load the fonts you use for your branding */
+
+@font-face {
+    font-family: 'Romana BT';
+    src: url('/fonts/RomanaBT-Bold.woff2') format('woff2'),
+        url('/fonts/RomanaBT-Bold.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('/fonts/HKGrotesk-Medium.woff2') format('woff2'),
+        url('/fonts/HKGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('/fonts/HKGrotesk-Regular.woff2') format('woff2'),
+        url('/fonts/HKGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* This sets the base colours and typography */
+
+body {
+    font-family: 'HK Grotesk';
+    color: #747679;
+    font-size: 24px;
+    background-color: #fafafa;
+}
+
+h1 {
+    font-family: 'Romana BT';
+    text-transform: uppercase;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 1px;
+    text-align: center;
+    padding-top: 32px;
+    letter-spacing: 3px
+}
+
+h2 {
+    font-family: 'HK Grotesk';
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 32px;
+    letter-spacing: 3px;
+}
+
+p {
+    padding: 0 24px;
+}
+
+/* Resize fonts and add more padding to the top when the screen is bigger */
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 32px;
+        padding-top: 32px;
+    }
+    h1 {
+        font-size: 64px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .bio {
+        max-width: 666px;
+        margin: auto;
+    }
+}
